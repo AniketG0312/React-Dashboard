@@ -1,0 +1,396 @@
+.bodyArea {
+  width: 100%;
+  height: auto;
+  padding: 5px 2px;
+  display: grid;
+  grid-template-columns: 20% 50% 28%;
+  grid-template-rows: 40px 140px 380px 220px;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #edf0f6;
+}
+
+/* sidebar */
+.sidebar {
+  grid-row: 1/4;
+  background-color: rgb(33, 35, 163);
+  box-sizing: border-box;
+  height: 109vh;
+  border-radius: 10px;
+}
+.side {
+  height: 100%;
+}
+.icon {
+  float: right;
+}
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+.profile {
+  margin: 10px;
+  background-color: #0d6efd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 5px;
+  margin-top: 300px;
+  color: whitesmoke;
+  font-weight: 500;
+}
+.select {
+  background: none;
+  outline: none;
+  border: none;
+  color: whitesmoke;
+}
+
+.selectnone {
+  display: none;
+  visibility: hidden;
+}
+
+/* //Sidebar */
+
+.header {
+  grid-column: 2/4;
+}
+.cardblock {
+  grid-column: 2/4;
+}
+.product {
+  grid-column: 2/4;
+}
+.overview,
+.product,
+.customer {
+  border-radius: 10px;
+}
+.headertitle h5 {
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+  background-color: none;
+}
+.headertitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchinput {
+  border: 1px solid;
+  background-color: white;
+  padding: 0px 5px;
+  border: 0;
+  border-radius: 5px;
+}
+.searchinput input {
+  border: 0;
+}
+
+/* ...........cards------------ */
+
+.cards {
+  display: flex;
+  border: 1px solid rgb(57, 11, 184);
+  align-items: center;
+  width: 200px;
+  border-radius: 5px;
+  width: 270px;
+  height: 120px;
+  margin-top: 10px;
+  background-color: white;
+  border: 2px solid white;
+  box-shadow: 1px 1px 2px 2px rgb(105, 101, 101);
+}
+.cards img {
+  margin: 20px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 50%;
+}
+.cards span {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+}
+.cards .cardtitle {
+  opacity: 0.5;
+}
+.doller {
+  font-style: bold;
+  font-weight: 500;
+  font-size: 20px;
+}
+.colorchange {
+  color: green;
+  opacity: 1;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorchangered {
+  color: red;
+  opacity: 1;
+  margin-right: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colorchange i,
+.colorchangered i {
+  font-size: 10px;
+  margin: 3px;
+}
+
+.cardsActivity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: none;
+}
+
+.Productheading {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 10px;
+}
+.Productheading .title {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+}
+.tablehead {
+  font-weight: 100;
+}
+
+.searchwithdate {
+  margin-left: 600px;
+  display: flex;
+}
+.selectdate,
+.search {
+  margin-left: 10px;
+}
+.search,
+.selectdate {
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 0px 5px;
+  background-color: white;
+}
+.search input {
+  border: none;
+  outline: none;
+}
+.Tablebody img {
+  width: 120px;
+  height: 70px;
+}
+.bold {
+  font-weight: 750;
+}
+
+/* --------------Overview----- */
+
+.overview{
+  background-color: white;
+  border: 1px solid white;
+  
+}
+
+
+
+.headigoverview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headigoverview span {
+  display: block;
+  font-family: "Times New Roman", Times, serif;
+}
+.title-1 {
+  font-weight: 800;
+  font-size: 25px;
+}
+.report select {
+  border: none;
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-family: "Times New Roman", Times, serif;
+}
+.chartbox {
+  background-color: white;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+.customerchart {
+  /* border: 1px solid; */
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  /* border: 1px solid; */
+}
+
+.cutomerbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.customerchart{
+  width: 250px;
+  height: 300px;
+}
+.sidebar-1 img{
+
+   margin: 0px  10px;
+}
+/* ---------------------------------Media Query--------------------------------- */
+@media only screen and (max-width: 768px ){
+
+  .bodyArea {
+    width: 100%;
+    height: auto;
+    padding: 5px 2px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 500px 550px 235px 500px;
+    gap: 25px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    background-color: #edf0f6;
+  }
+
+  .searchwithdate {
+    margin-left: 20px;
+    display: flex;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+
+
+  .sidebar {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height:auto;
+    margin: 10px 10px;
+  }
+  .profile {
+   
+    /* margin-top: 10px; */
+    margin: 0px 10px;
+   
+    
+  }
+  .select{
+    margin-left:160px;
+  }
+  .header {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 10px;
+  }
+  .cardblock {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .cardsActivity {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .cards{
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .overview{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    margin: 10px;
+  }
+  .customer{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    margin: 10px;
+  }
+   
+  .customerchart{
+    width: 250px;
+    height: 300px;
+  }
+  .headertitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+  .product {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    margin: 10px;
+  }
+  .Productheading{
+    margin: 10px;
+  }
+  .headertitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .searchinput {
+    border: 1px solid;
+    background-color: white;
+    /* padding: 0px 5px; */
+    border: 0;
+    border-radius: 5px;
+    width: 0px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 11px;
+    
+  }
+  .searchinput input{
+
+  width: 120px;
+  
+  }
+  .searchwithdate{
+     display: flex;
+     flex-direction: column;
+
+  }
+  .Productheading{
+   display: flex;
+   justify-content: space-between;
+  }
+}
+
+
+/* ------------------------Media Query------------------------------------ */
+
+
